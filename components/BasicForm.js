@@ -6,7 +6,7 @@ const BasicForm = ({ validation }) => {
   return (
     <Formik
       initialValues={{ name: '', apellido: '', numero: '' }}
-      validate={validation} // Usamos la función de validación pasada como prop
+      validate={validation} 
       onSubmit={(values) => {
         console.log('Formulario enviado:', values);
       }}
